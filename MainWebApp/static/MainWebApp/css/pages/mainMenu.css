@@ -1,0 +1,406 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------COMMON USE SECTIONS--------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 20px) {
+
+    .h1, .h2, .h3, .h4, .h5, .h6, p, input, textarea, a, .submitBtn, .messagePopUp-header h2, ::placeholder, .btnIconImg{
+            /*font-family: Candara;*/
+            /*font-family: Helvetica;*/
+            font-fmaily: quagmire;
+            color: #002A46;
+    }
+
+    .h1{font-size:36px;}
+    .h2, .messagePopUp-header h2{font-size:30px;}
+    .h3, .btnIconImg{font-size:24px !important;}
+    .h4, input, textarea, .buttonSection a{font-size:20px;}
+    .h5, p, .submitBtn {font-size:18px;}
+    .h6{font-size:16px;}
+
+    ::placeholder{
+        color: #9c9c9c;
+        visibility:hidden;
+    }
+
+    a, button, input, textarea{
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    input{
+        height: 40px !important;
+    }
+
+    input, textarea{
+        width: 100%;
+        background: #f5f5f5;
+        border-style: none;
+    }
+    .submitBtn{
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        color: white;
+        position: relative;
+        background: #D95456;
+        border: none;
+        top: 30px;
+        width:auto !important;
+        height: 40px;
+    }
+
+    .modal, .loadingBackground, #hiddenLayer{
+        position:fixed;
+        width:100%;
+        height:100%;
+        background: #0000004a;
+        z-index: 2;
+        top: 0px;
+        display:none;
+    }
+
+    .loadingBackground, #hiddenLayer{
+           text-align: center;
+    }
+
+
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    #hiddenMenuButton, #hiddenMenuButton:hover, #closeMenuButton, #closeMenuButton:hover {
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        background: #ffffff00;
+        border-color: #ffffff00;
+        color: #002A46;
+        font-size: 20px;
+        width:60px;
+        height:100%;
+        display: grid;
+        align-items: center;
+    }
+
+
+    #hiddenMenuButton, #hiddenMenuButton:hover {
+        left: 0px;
+    }
+
+    #closeMenuButton, #closeMenuButton:hover {
+        right: 0px;
+    }
+
+
+    .btnIntro:hover, .btnIntroSelected{
+        background: #F4A25C;
+    }
+
+    .btnProject:hover, .btnProjectSelected{
+        background:#D95456;
+    }
+
+    .btnContact:hover, .btnContactSelected{
+        background:#44A19F;
+    }
+
+    .mainMenuBar, .responsiveMainMenuBar, .footer {
+        background: #f5f5f5;
+    }
+
+    .mainMenuBar, .responsiveMainMenuBar{
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        height: 120px;
+        width: 100%;
+        left: 0;
+    }
+
+    .logoSection{
+        text-align: center;
+    }
+
+    .logoSection, .responsiveLogoSection{
+        height:100%;
+        width:120px;
+        margin-left: 60px;
+        float: left;
+    }
+
+    .logoSection a img, .responsiveLogoSection a img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .buttonSection a{
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+
+     .mainContent{
+        height: auto !important;
+        position: absolute;
+        width:100%;
+    }
+
+    .contentDetail{
+        top: 0;
+        bottom: 100px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    /* The Modal (background) */
+
+    .modal{
+        padding-top: 100px;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #ffffff00;
+        margin: auto;
+        padding: 0;
+        border: none;
+        width: fit-content;
+        box-shadow: 0 0px 0px 0 rgba(255,255,255,0),0 0px 0px 0 rgba(255,255,255,0);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+
+    .modal-header{
+        background-color: #D95456;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .modal-header h2{
+        color: white;
+    }
+
+    .modal-body{
+        background: white;
+    }
+
+    .modal-footer{
+        background: white;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------RESPONSIVE SECTIONS--------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*This style is for devices with screen width is larger than 1026px*/
+/*Suitable devices are desktop or tablets in landscape mode 1026*/
+
+@media screen and (min-width: 1000px) {
+
+    #hiddenMenuButton, #closeMenuButton{
+        visibility: hidden;
+    }
+
+
+    .buttonSection{
+        float: right;
+        margin-top: 10px;
+        height: 100px;
+        margin-right: 60px;
+    }
+
+    .buttonSection a{
+        width: auto !important;
+        display: table-cell;
+        height: 100px;
+        vertical-align: middle;
+    }
+
+    .responsiveMainMenuBar{
+        display:none;
+    }
+
+     .mainContent{
+        top: 120px;
+        width:100%
+    }
+
+}
+
+
+/*This style is for devices with screen width is up to 1025px*/
+/*Suitable devices are tablets 1025*/
+@media screen and (max-width: 999px) {
+
+    .h1{font-size:34px;}
+    .h2, .messagePopUp-header h2{font-size:28px;}
+    .h3, .btnIconImg{font-size:22px !important;}
+    .h4, input, textarea, .buttonSection a{font-size:20px;}
+    .h5, p, .submitBtn {font-size:16px;}
+    .h6{font-size:14px;}
+
+    .mainMenuBar .buttonSection{
+        display:none;
+    }
+
+    .mainMenuBar, .closeMenuButtonSection{
+        position:absolute;
+        height:72px;
+    }
+
+    .logoSection{
+        width: calc(100% - 60px);
+        right:0px;
+    }
+
+    .logoSection a img, .responsiveLogoSection a img{
+        width: 72px;
+        height: 100%;
+    }
+
+    .logoSection a img{
+        margin-left: -60px;
+    }
+
+    .responsiveMainMenuBar{
+        height: 100%;
+        width: 400px;
+        left: -400px;
+        z-index:3;
+        -webkit-transition: left 0.2s;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    .closeMenuButtonSection{
+        width:100%;
+    }
+    .buttonSection{
+        width:100%;
+        height: auto !important;
+        margin-top:72px;
+    }
+
+    .buttonSection a{
+        width: 100%;
+        display: block;
+        font-size: 22px;
+        line-height: 72px;
+        border-radius: 0px;
+    }
+
+    .mainContent{
+        top: 72px;
+    }
+
+    .contentDetail{
+        margin-left:25px;
+        margin-right:25px;
+    }
+
+    .modal {
+        top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .h1{font-size:30px;}
+    .h2, .messagePopUp-header h2{font-size:24px;}
+    .h3, .btnIconImg {font-size:18px !important;}
+    .h4, input, textarea, .buttonSection a , .submitBtn {font-size:16px;}
+    .h5, p{font-size:12px;}
+    .h6{font-size:10px;}
+
+    ::placeholder{
+        visibility:visible;
+    }
+
+    .responsiveMainMenuBar{
+        width: 100%;
+        left: -100%;
+        border-radius:0px;
+    }
+
+    .mainMenuBar, .closeMenuButtonSection{
+        height:48px;
+    }
+
+    .logoSection a img, .responsiveLogoSection a img{
+        width: 48px;
+    }
+
+    #hiddenMenuButton, #hiddenMenuButton:hover, #closeMenuButton, #closeMenuButton:hover {
+        font-size: 18px;
+        width:48px;
+    }
+    #hiddenMenuButton, #hiddenMenuButton:hover{
+        display: flex;
+    }
+
+    .buttonSection a{
+        font-size: 18px;
+        line-height: 48px;
+    }
+
+    .mainContent{
+        top: 48px;
+    }
+
+    .contentDetail{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .formLabel{
+        display: none;
+    }
+
+}
+
+/*@media screen and (max-width: 500px) {
+    .contentDetail{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-height: 1023px) {
+    .mainMenuBar{
+        height: 1024px;
+        overflow-y: auto;
+        position: absolute;
+    }
+
+}*/
+

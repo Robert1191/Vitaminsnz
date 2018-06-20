@@ -1,0 +1,85 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------COMMON USE SECTIONS--------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 20px) {
+    .loadingBackground div:first-child {
+              border: 16px solid #002A46;
+              border-radius: 50%;
+              border-top: 16px solid #F4A25C;
+              border-right: 16px solid #D95456;
+              border-bottom: 16px solid #44A19F;
+              width: 120px;
+              height: 120px;
+              -webkit-animation: spin 2s linear infinite;
+              animation: spin 2s linear infinite;
+              position: fixed;
+              margin-top: -120px;
+              margin-left: -120px;
+              left: 55vw;
+              top: 55vh;
+        }
+
+    .loadingBackground div:nth-child(2) {
+            position: fixed;
+            width: 120px;
+            left: 55vw;
+            top: 55vh;
+            margin-left: -120px;
+    }
+
+    .loadingBackground div span {
+        -webkit-animation: unset;
+         animation: unset;
+    }
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------RESPONSIVE SECTIONS--------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*This style is for devices with screen width is larger than 1026px*/
+/*Suitable devices are desktop or tablets in landscape mode 1026*/
+
+@media screen and (min-width: 1000px) {
+
+
+}
+
+
+/*This style is for devices with screen width is up to 1025px*/
+/*Suitable devices are tablets 1025*/
+@media screen and (max-width: 999px) {
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .loadingBackground div:nth-child(n+1) {
+        left: 65vw;
+    }
+
+}
+
+/*@media screen and (max-width: 500px) {
+    .contentDetail{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-height: 1023px) {
+    .mainMenuBar{
+        height: 1024px;
+        overflow-y: auto;
+        position: absolute;
+    }
+
+}*/
+

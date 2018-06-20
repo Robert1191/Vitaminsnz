@@ -1,0 +1,31 @@
+{% extends "MainWebApp/mainMenu.html" %}
+
+{% block content %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'MainWebApp/css/pages/about.css' %}">
+<script language="JavaScript" type="text/javascript" src="{% static 'MainWebApp/functions/pages/about.js' %}"></script>
+<div class="contentDetail">
+ <div class="aboutDetails" >
+      <h1 class="h1">We are registered company specialising in Wall and Floor Tiling in Auckland</h1>
+     <hr>
+      {% for l in mainStaffList %}
+        <div class="staffDetails">
+             <div class="staffPhoto">
+                 <img src="{{ l.imageLink }}" >
+                 <h2 class="h2">{{l.fullName}}</h2>
+                 <h4 class="h4">{{l.roleName}}</h4>
+            </div>
+
+            <div class="staffInformation" >
+                 {{l.description}}
+            </div>
+
+        </div>
+         <!--<h2 class="h2">{{l.DESCRIPTIONS}}</h2>-->
+      {% endfor %}
+ </div>
+
+</div>
+
+
+{% endblock %}
