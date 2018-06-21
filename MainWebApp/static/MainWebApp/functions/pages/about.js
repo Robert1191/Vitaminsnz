@@ -1,8 +1,7 @@
 $(document).ready(function(){
-    mainFunc_PageTitle("Giới Thiệu - Trang Trí Nội Thất Anh Thư");
+    mainFunc_PageTitle("Giới Thiệu - Vitamins NZ");
 
     mainFunc_SetMenuBtnColor ("about");
-
 
 });
 

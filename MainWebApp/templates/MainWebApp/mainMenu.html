@@ -14,6 +14,7 @@
 {% include "MainWebApp/widgets/loadingBackground.html" %}
 {% include "MainWebApp/widgets/staffLoginForm.html" %}
 <div class="mainMenuBar">
+
      <div id="hiddenMenuButton" class="btn">
       <span >&#9776;</span>
 
@@ -25,11 +26,12 @@
     </div>
 
     <div class="buttonSection">
-        <a class="btnIntro" href="{% url 'about' %}" >GIỚI THIỆU</a>
-        <a class="btnProject" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
-        <a class="btnContact" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
+        <a class="buttonSectionItem" href="{% url 'about' %}" >GIỚI THIỆU</a>
+        <a class="buttonSectionItem" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
+        <a class="buttonSectionItem" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
         <a class="btnStaffLogin" style="width:40px !important;" ><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
     </div>
+<hr>
 </div>
 
 <div class="responsiveMainMenuBar">
@@ -38,10 +40,10 @@
             <span >X</span></div>
      </div>
 
-    <div class="buttonSection">
-        <a class="btnIntro" href="{% url 'about' %}" >GIỚI THIỆU</a>
-        <a class="btnProject" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
-        <a class="btnContact" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
+    <div class="buttonSection" style="margin-right: 0px;">
+        <a class="buttonSectionItem" href="{% url 'about' %}" >GIỚI THIỆU</a>
+        <a class="buttonSectionItem" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
+        <a class="buttonSectionItem" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
         <a class="btnStaffLogin" ><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
     </div>
 </div>

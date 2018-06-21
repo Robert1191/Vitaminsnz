@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    mainFunc_PageTitle("Trang Chủ - Trang Trí Nội Thất Anh Thư");
+    mainFunc_PageTitle("Trang Chủ - Vitamins NZ");
 });

@@ -8,8 +8,7 @@
 
     .h1, .h2, .h3, .h4, .h5, .h6, p, input, textarea, a, .submitBtn, .messagePopUp-header h2, ::placeholder, .btnIconImg{
             /*font-family: Candara;*/
-            /*font-family: Helvetica;*/
-            font-fmaily: quagmire;
+            font-family: Helvetica;
             color: #002A46;
     }
 
@@ -45,7 +44,7 @@
         vertical-align: middle;
         color: white;
         position: relative;
-        background: #D95456;
+        background: #49963c;;
         border: none;
         top: 30px;
         width:auto !important;
@@ -56,7 +55,7 @@
         position:fixed;
         width:100%;
         height:100%;
-        background: #0000004a;
+        background: #00000020;
         z-index: 2;
         top: 0px;
         display:none;
@@ -101,20 +100,13 @@
     }
 
 
-    .btnIntro:hover, .btnIntroSelected{
-        background: #F4A25C;
-    }
-
-    .btnProject:hover, .btnProjectSelected{
-        background:#D95456;
-    }
-
-    .btnContact:hover, .btnContactSelected{
-        background:#44A19F;
+    .buttonSectionItem:hover, .buttonSectionItemSelected{
+        background: #f19d2b;
     }
 
     .mainMenuBar, .responsiveMainMenuBar, .footer {
-        background: #f5f5f5;
+        /*background: #f5f5f5;*/
+        background: white;
     }
 
     .mainMenuBar, .responsiveMainMenuBar{
@@ -132,9 +124,13 @@
 
     .logoSection, .responsiveLogoSection{
         height:100%;
-        width:120px;
-        margin-left: 60px;
+        width: 180px;
+        margin-left: 30px;
         float: left;
+    }
+
+    .logoSection a {
+        padding: 0px;
     }
 
     .logoSection a img, .responsiveLogoSection a img{
@@ -142,10 +138,27 @@
         height: 100%;
     }
 
+    .buttonSection{
+        float: right;
+        margin-top: 10px;
+        height: 100px;
+        margin-right: 30px;
+    }
+
     .buttonSection a{
         cursor: pointer;
         text-align: center;
         text-decoration: none;
+    }
+
+    hr{
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom: solid #f19d2b;
+        border-width: 1px;
+        width: calc(100% - 120px);
+        z-index: -1;
     }
 
      .mainContent{
@@ -157,8 +170,8 @@
     .contentDetail{
         top: 0;
         bottom: 100px;
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     /* The Modal (background) */
@@ -231,19 +244,26 @@
         visibility: hidden;
     }
 
-
-    .buttonSection{
-        float: right;
-        margin-top: 10px;
-        height: 100px;
-        margin-right: 60px;
-    }
-
     .buttonSection a{
         width: auto !important;
         display: table-cell;
         height: 100px;
         vertical-align: middle;
+    }
+
+    hr{
+        border-top: none;
+        border-left: solid #f19d2b;
+        border-right: solid #f19d2b;
+        border-bottom: solid #f19d2b;
+        border-width: 1px;
+        width: calc(100% - 40px);
+        height: 120px;
+        position: absolute;
+        margin-top: 0;
+        left: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .responsiveMainMenuBar{
@@ -279,17 +299,21 @@
     }
 
     .logoSection{
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
         right:0px;
     }
 
     .logoSection a img, .responsiveLogoSection a img{
-        width: 72px;
+        width: 108px;
         height: 100%;
     }
 
     .logoSection a img{
         margin-left: -60px;
+    }
+
+    hr{
+        width: calc(100% - 50px);
     }
 
     .responsiveMainMenuBar{
@@ -357,7 +381,7 @@
     }
 
     .logoSection a img, .responsiveLogoSection a img{
-        width: 48px;
+        width: 72px;
     }
 
     #hiddenMenuButton, #hiddenMenuButton:hover, #closeMenuButton, #closeMenuButton:hover {
@@ -371,6 +395,10 @@
     .buttonSection a{
         font-size: 18px;
         line-height: 48px;
+    }
+
+    hr{
+        width: calc(100% - 20px);
     }
 
     .mainContent{

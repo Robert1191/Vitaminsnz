@@ -5,7 +5,23 @@
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 20px) {
-    .aboutDetails{
+    .contentDetail{
+        text-align:center;
+    }
+
+    .contentDetailTitle{
+        width:100%;
+        height:100vh;
+        display: flow-root;
+        background: url("../../images/About_bg.jpg");
+        background-repeat: no-repeat;
+        background-size:100% auto;
+    }
+
+    .contentDetailTitle div{
+        margin-top: 35vh;
+    }
+    /*.aboutDetails{
         margin: auto;
         width: 80%;
         position: relative;
@@ -44,7 +60,7 @@
         width:68% !important;
         float:right;
         text-align: left;
-     }
+     }*/
 
 }
 

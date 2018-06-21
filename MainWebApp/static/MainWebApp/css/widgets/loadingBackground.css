@@ -6,11 +6,11 @@
 
 @media screen and (min-width: 20px) {
     .loadingBackground div:first-child {
-              border: 16px solid #002A46;
+              border: 16px solid #49963c;
               border-radius: 50%;
-              border-top: 16px solid #F4A25C;
-              border-right: 16px solid #D95456;
-              border-bottom: 16px solid #44A19F;
+              border-top: 16px solid #f4a25c00;
+              border-right: 16px solid #f19d2b;
+              border-bottom: 16px solid #44a19f00;
               width: 120px;
               height: 120px;
               -webkit-animation: spin 2s linear infinite;

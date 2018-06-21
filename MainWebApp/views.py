@@ -19,38 +19,39 @@ def index(request):
 
 def about(request):
 
-    db = dataConnect()
-    cur = db.createConnection()
+    # db = dataConnect()
+    # cur = db.createConnection()
 
-    mainStaffList = []
-    if cur != False:
-        # cur.execute("""SELECT r.descriptions from roles r""")
-        cur.execute("""
-        select concat(s.lastname::text, ' ',  s.middlename::text, ' ', s.firstname::text) AS fullname , s.imagelink
-            , 
-            case 
-            when r.descriptions = 'Owner' then 'Chủ Cơ Sở'
-            else r.descriptions
-            end
-            from STAFF s left join ROLES r 
-            on r.id = s.Roleid 
-            where s.isactive = True AND r.isactive = True;
-        """)
+    # mainStaffList = []
+    # if cur != False:
+    #     # cur.execute("""SELECT r.descriptions from roles r""")
+    #     cur.execute("""
+    #     select concat(s.lastname::text, ' ',  s.middlename::text, ' ', s.firstname::text) AS fullname , s.imagelink
+    #         ,
+    #         case
+    #         when r.descriptions = 'Owner' then 'Chủ Cơ Sở'
+    #         else r.descriptions
+    #         end
+    #         from STAFF s left join ROLES r
+    #         on r.id = s.Roleid
+    #         where s.isactive = True AND r.isactive = True;
+    #     """)
+    #
+    #     rows = cur.fetchall()
+    #
+    #     for row in rows:
+    #         roles = ROLES()
+    #         roles.fullName = row[0]
+    #         roles.imageLink = row[1]
+    #         roles.roleName = row[2]
+    #         roles.description = '<p> hello </p> <p> hello2 </p>'
+    #         mainStaffList.append(roles)
+    #     db.closeConnection()
+    # else:
+    #     print("error")
 
-        rows = cur.fetchall()
-
-        for row in rows:
-            roles = ROLES()
-            roles.fullName = row[0]
-            roles.imageLink = row[1]
-            roles.roleName = row[2]
-            roles.description = '<p> hello </p> <p> hello2 </p>'
-            mainStaffList.append(roles)
-        db.closeConnection()
-    else:
-        print("error")
-
-    return render(request, "MainWebApp/about.html", {'mainStaffList': mainStaffList})
+    # return render(request, "MainWebApp/about.html", {'mainStaffList': mainStaffList})
+    return render(request, "MainWebApp/about.html")
 
 def contact(request):
     if request.method == "POST":

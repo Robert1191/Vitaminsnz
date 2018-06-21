@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    mainFunc_PageTitle("Liên Lạc - Trang Trí Nội Thất Anh Thư");
+    mainFunc_PageTitle("Liên Lạc - Vitamins NZ");
 
     mainFunc_SetMenuBtnColor("contact");
 
