@@ -9,7 +9,7 @@
     .h1, .h2, .h3, .h4, .h5, .h6, p, input, textarea, a, .submitBtn, .messagePopUp-header h2, ::placeholder, .btnIconImg{
             /*font-family: Candara;*/
             font-family: Helvetica;
-            color: #002A46;
+            color: #444;
     }
 
     .h1{font-size:36px;}
@@ -19,7 +19,120 @@
     .h5, p, .submitBtn {font-size:18px;}
     .h6{font-size:16px;}
 
-    ::placeholder{
+    a, button, input, textarea{
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .mainMenuBar, .responsiveMainMenuBar {
+        position: relative;
+        z-index: 1;
+        top: 0;
+        height: 80px;
+        width: 100%;
+        left: 0;
+        background-color: white;
+    }
+
+    .mainMenuBarContainer{
+        position:relative;
+        height:100%;
+        width: calc(100% - 120px);
+        left:60px;
+    }
+
+    .logoSection{
+        position: absolute;
+        background-color:white;
+        height: 110px;
+        width: 170px;
+        left: calc((100% - 170px)/2);
+        border-radius: 0px 0px 6px 6px;
+        border-style: none solid solid solid;
+        border-color: #a0c89a;
+    }
+
+    .logoSection a {
+        padding:0px;
+    }
+
+    .logoSection a img, .responsiveLogoSection a img{
+        width: 100%;
+        height: 100%;
+        padding:5px 10px 5px 10px;
+    }
+
+    .mainMenuBarLeftBtnSection, .mainMenuBarRightBtnSection{
+        height: 100%;
+        width: calc((100% - 170px)/2);
+        position: absolute;
+    }
+
+    .mainMenuBarLeftBtnSection{
+        left: 0px;
+    }
+
+    .mainMenuBarLeftBtnSection a, .mainMenuBarRightBtnSection a{
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+
+        width: auto !important;
+        display: table-cell;
+        height: 80px;
+        vertical-align: middle;
+    }
+
+    .mainMenuBarRightBtnSection{
+        right:0px;
+        text-align: -webkit-right;
+    }
+
+
+    .buttonSectionItem:hover{
+        color:#f1a133;
+        border-style: none none solid none;
+        border-radius: 0px;
+    }
+
+    .searchAndCheckOut{
+        height: 100%;
+        width: auto !important;
+        display: table-cell;
+        padding-left: 60px;
+    }
+
+    .menuSearchBtn, .menuCheckOutBtn{
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        margin-top: 10px;
+        cursor: pointer;
+        vertical-align: middle;
+        transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        background: #a0c89a;
+        text-align: center;
+        border-radius:6px;
+        border-thick:2px;
+        float:left;
+    }
+
+    .menuCheckOutBtn{
+        float:right;
+        margin-left:10px;
+    }
+
+    .menuSearchBtn:hover, .menuCheckOutBtn:hover{
+        border-radius: 0px;
+        color:#f1a133;
+    }
+
+
+    /*::placeholder{
         color: #9c9c9c;
         visibility:hidden;
     }
@@ -105,7 +218,7 @@
     }
 
     .mainMenuBar, .responsiveMainMenuBar, .footer {
-        /*background: #f5f5f5;*/
+        *//*background: #f5f5f5;*//*
         background: white;
     }
 
@@ -174,13 +287,13 @@
         margin-right: 30px;
     }
 
-    /* The Modal (background) */
+
 
     .modal{
         padding-top: 100px;
     }
 
-    /* Modal Content */
+
     .modal-content {
         position: relative;
         background-color: #ffffff00;
@@ -195,7 +308,7 @@
         animation-duration: 0.4s
     }
 
-    /* Add Animation */
+
     @-webkit-keyframes animatetop {
         from {top:-300px; opacity:0}
         to {top:0; opacity:1}
@@ -224,7 +337,8 @@
         background: white;
         border-bottom-right-radius: 6px;
         border-bottom-left-radius: 6px;
-    }
+    }*/
+
 }
 
 
@@ -240,7 +354,7 @@
 
 @media screen and (min-width: 1000px) {
 
-    #hiddenMenuButton, #closeMenuButton{
+    /*#hiddenMenuButton, #closeMenuButton{
         visibility: hidden;
     }
 
@@ -273,7 +387,7 @@
      .mainContent{
         top: 120px;
         width:100%
-    }
+    }*/
 
 }
 
@@ -289,7 +403,7 @@
     .h5, p, .submitBtn {font-size:16px;}
     .h6{font-size:14px;}
 
-    .mainMenuBar .buttonSection{
+    /*.mainMenuBar .buttonSection{
         display:none;
     }
 
@@ -353,7 +467,7 @@
 
     .modal {
         top: 0px;
-    }
+    }*/
 
 }
 
@@ -366,7 +480,7 @@
     .h5, p{font-size:12px;}
     .h6{font-size:10px;}
 
-    ::placeholder{
+    /*::placeholder{
         visibility:visible;
     }
 
@@ -412,7 +526,7 @@
 
     .formLabel{
         display: none;
-    }
+    }*/
 
 }
 

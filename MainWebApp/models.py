@@ -1,8 +1,5 @@
-from django.db import models
-# Create your models here.
+from __future__ import unicode_literals
 
-class ROLES(models.Model):
-    fullName = models.CharField(max_length=50)
-    roleName = models.CharField(max_length=50)
-    imageLink = models.CharField(max_length=50)
-    description = models.CharField(max_length=1000)
+from django.db import models
+
+# Create your models here.
