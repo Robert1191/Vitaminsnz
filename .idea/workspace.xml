@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33ca1251-8ab6-4968-9f24-7372bd21d5b7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css" beforeDir="false" afterPath="$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js" beforeDir="false" afterPath="$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWebApp/templates/MainWebApp/_layout_.html" beforeDir="false" afterPath="$PROJECT_DIR$/MainWebApp/templates/MainWebApp/_layout_.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,13 +19,15 @@
       <file leaf-file-name="_layout_.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainWebApp/templates/MainWebApp/_layout_.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="257">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="24" selection-end-line="29" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#i#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#i#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#1;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#2;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#3;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -35,20 +37,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_layout_.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css">
+      <file leaf-file-name="_layout_.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+            <state relative-caret-position="17">
+              <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_layout_.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js">
+      <file leaf-file-name="_layout_.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="472">
+              <caret line="175" column="22" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -76,16 +78,16 @@
         <option value="$PROJECT_DIR$/MainWebApp/templates/pages/index.html" />
         <option value="$PROJECT_DIR$/MainWebApp/views.py" />
         <option value="$PROJECT_DIR$/MainWebApp/templates/MainWebApp/pages/index.html" />
-        <option value="$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js" />
-        <option value="$PROJECT_DIR$/MainWebApp/templates/MainWebApp/_layout_.html" />
         <option value="$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css" />
+        <option value="$PROJECT_DIR$/MainWebApp/templates/MainWebApp/_layout_.html" />
+        <option value="$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="442" />
-    <option name="y" value="477" />
-    <option name="width" value="1916" />
+    <option name="x" value="633" />
+    <option name="y" value="59" />
+    <option name="width" value="1292" />
     <option name="height" value="1049" />
   </component>
   <component name="ProjectView">
@@ -97,49 +99,52 @@
         <subPane>
           <expand>
             <path>
-              <item name="Base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Vitaminsnz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vitaminsnz" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Vitaminsnz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vitaminsnz" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Vitaminsnz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vitaminsnz" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Vitaminsnz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vitaminsnz" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Vitaminsnz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vitaminsnz" type="462c0819:PsiDirectoryNode" />
+              <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vitaminsnz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vitaminsnz" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
               <item name="functions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Vitaminsnz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vitaminsnz" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Vitaminsnz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vitaminsnz" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="MainWebApp" type="462c0819:PsiDirectoryNode" />
@@ -187,16 +192,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10590095" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -214,13 +218,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MainWebApp/templates/MainWebApp/_layout_.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+        <state relative-caret-position="527">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#i#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#i#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#1;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#2;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#3;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -229,20 +235,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js">
+    <entry file="file://$PROJECT_DIR$/MainWebApp/templates/MainWebApp/_layout_.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="544">
+          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#i#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#i#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#1;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#2;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#3;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#4;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js" />
+    <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css" />
     <entry file="file://$PROJECT_DIR$/Base/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1149">
@@ -271,22 +284,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainWebApp/templates/MainWebApp/pages/index.html">
+    <entry file="file://$PROJECT_DIR$/MainWebApp/templates/MainWebApp/pages/index.html" />
+    <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+        <state relative-caret-position="472">
+          <caret line="175" column="22" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainWebApp/templates/MainWebApp/_layout_.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="257">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="24" selection-end-line="29" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#i#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#i#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#1;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#2;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#3;n#ul#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -297,15 +313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/functions/_layout_.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainWebApp/static/MainWebApp/css/_layout_.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+        <state relative-caret-position="17">
+          <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
         </state>
       </provider>
     </entry>

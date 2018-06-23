@@ -7,7 +7,40 @@ $(document).ready(function(){
         }
     };
 
+    var brandList = ["Aptamil", "Absolute Organic", "Barnes Natural", "Bayer", "Bio Island",
+                    "Bio Organics", "Bioglan", "Blossom", "Blackmores", "Bushman",
+                        "Cenovis", "Centrum", "Driclor", "Goat", "Healthy Care Australia",
+                        "Healthy Way", "Just Organic",
+                        "Life Space", "Macro Organic", "Morlife","Nicorette", "Oriental Botanicals", "Ostelin",
+                        "Pentavite", "Prospan", "Swisse", "Sustagen", "Thursday Plantation", "Tom Organic", "Trilogy"
+                    ];
+        for (i = 0; i < brandList.length; i+=12) {
+            var div = $("<div></div>");
+            var ul = $("<ul></ul>");
+            for (a = i; a < i + 12; a++){
+                if(brandList[a] != undefined){
+                     ul.append($('<a class="h5" onclick=\'printString("' + brandList[a] + '")\'>'+ brandList[a] + '</a>'));
+                }
+
+            }
+            div.append(ul);
+            $('#brandBtnDetails').append(div);
+
+        }
+
+    var productList = ["Thực Phẩm Chức Năng", "Sản Phẩm Organic", "Siêu Thực Phẩm Superfoods", "Sukin Skincare", "Làm Đẹp", "Baby Care" ];
+
+    var ul = $("<ul></ul>");
+    for (i = 0; i < productList.length; i++) {
+        ul.append($('<a class="h5" onclick="printString(\'' + productList[i] + '\')">'+ productList[i] + '</a>'));
+    }
+    $('#productBtnDetails').append(ul);
+
 });
+
+function printString(s){
+    console.log(s);
+}
 
 /*
 $(document).ready(function(){
