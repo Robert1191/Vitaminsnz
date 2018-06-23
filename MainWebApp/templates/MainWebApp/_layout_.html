@@ -17,8 +17,34 @@
         <div class="logoSection">
             <a href="{% url 'index' %}" ><img src="{% static 'MainWebApp/images/logo.png' %}" ></a>
         </div>
+        <ul class="buttonSection">
+            <li class="buttonSectionItem h4">Sản Phẩm</li>
+            <li class="buttonSectionItem h4">Nhãn Hàng</li>
+            <li class="buttonSectionItem h4">Tư Vấn</li>
+            <li class="buttonSectionItem h4">Dịch Vụ</li>
+            <li id="inforBtn" class="buttonSectionItem h4">Thông Tin
+                <div id="inforBtnDetails">
+                        <ul>
+                            <a class="h4">Về Chúng Tôi</a>
+                            <a class="h4">Liên Lạc</a>
+                        </ul>
+                </div>
+            </li>
 
-        <div class="mainMenuBarLeftBtnSection">
+            <li class="buttonSectionItem h4 btnIconImg"  ><i class="fa fa-search" style="margin:auto;"></i></li>
+            <li id="shoppingBtn" class="buttonSectionItem h4 btnIconImg"  ><i class="fa fa-shopping-bag " style="margin:auto;"></i>
+                <div id="shoppingBtnDetails">
+                    <ul>
+                        <a class="h4"><span class="fa fa-shopping-bag" style="margin:auto;"></span>Giỏ Hàng</a>
+                        <a class="h4"><span class="fa fa-heart-o" style="margin:auto;"></span>Yêu Thích</a>
+                        <a class="h4"><span class="fa fa-truck" style="margin:auto;"></span>Đơn Hàng</a>
+                        <a class="h4"><span class="fa fa-user-o" style="margin:auto;"></span>Đăng Nhập</a>
+                        <a class="h4"><span class="fa fa-address-book-o" style="margin:auto;"></span>Đăng Ký</a>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!--<div class="mainMenuBarLeftBtnSection">
             <a class="buttonSectionItem h4" href="{% url 'index' %}" >Thực Phẩm Chức Năng</a>
             <a class="buttonSectionItem h4" href="{% url 'index' %}" >Sản Phẩm Thiên Nhiên</a>
             <a class="buttonSectionItem h4" href="{% url 'index' %}" >Mỹ Phẩm</a>
@@ -32,9 +58,8 @@
                 <div class=" h2 menuSearchBtn" ><i class="fa fa-search"></i></div>
                 <div class=" h2 menuCheckOutBtn" ><i class="fa fa-shopping-cart"></i></div>
             </div>
-            <!--<a class="buttonSectionItem h3 menuSearchBtn" ><i class="fa fa-search"></i></a>-->
 
-        </div>
+        </div>-->
     </div>
 
 </div>
