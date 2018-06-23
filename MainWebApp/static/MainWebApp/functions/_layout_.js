@@ -1,11 +1,4 @@
 $(document).ready(function(){
-    window.onscroll = function() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            $('.mainMenuBar').css("position", "fixed");
-        } else {
-            $('.mainMenuBar').css("position", "relative");
-        }
-    };
 
     var brandList = ["Aptamil", "Absolute Organic", "Barnes Natural", "Bayer", "Bio Island",
                     "Bio Organics", "Bioglan", "Blossom", "Blackmores", "Bushman",
@@ -35,6 +28,14 @@ $(document).ready(function(){
         ul.append($('<a class="h5" onclick="printString(\'' + productList[i] + '\')">'+ productList[i] + '</a>'));
     }
     $('#productBtnDetails').append(ul);
+
+    $('#searchBtn').on( "click", function(e){
+        $('#searchBarSection').css("display", "block");
+    });
+
+    $('#searchCancelBtn').on( "click", function(e){
+        $('#searchBarSection').css("display", "none");
+    });
 
 });
 
