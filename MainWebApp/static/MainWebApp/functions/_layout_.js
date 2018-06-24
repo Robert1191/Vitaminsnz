@@ -12,7 +12,7 @@ $(document).ready(function(){
             var ul = $("<ul></ul>");
             for (a = i; a < i + 12; a++){
                 if(brandList[a] != undefined){
-                     ul.append($('<a class="h5" onclick=\'printString("' + brandList[a] + '")\'>'+ brandList[a] + '</a>'));
+                     ul.append($('<a class="h5" href="/brands/'+brandList[a] + '/" >'+ brandList[a] + '</a>'));
                 }
 
             }
@@ -20,6 +20,8 @@ $(document).ready(function(){
             $('#brandBtnDetails').append(div);
 
         }
+
+    href="/sample/abc/"
 
     var productList = ["Thực Phẩm Chức Năng", "Sản Phẩm Organic", "Siêu Thực Phẩm Superfoods", "Sukin Skincare", "Làm Đẹp", "Baby Care" ];
 
@@ -30,18 +32,18 @@ $(document).ready(function(){
     $('#productBtnDetails').append(ul);
 
     $('#searchBtn').on( "click", function(e){
+        $('.buttonSection').css("display", "none");
         $('#searchBarSection').css("display", "block");
     });
 
     $('#searchCancelBtn').on( "click", function(e){
         $('#searchBarSection').css("display", "none");
+        $('#searchBarSection input').val('');
+        $('.buttonSection').css("display", "block");
     });
 
 });
 
-function printString(s){
-    console.log(s);
-}
 
 /*
 $(document).ready(function(){

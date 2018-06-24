@@ -208,6 +208,31 @@
         height: 60px;
         margin: 0px 0px 0px 20px;
     }
+
+    .contentDetail{
+        top: 0;
+        bottom: 100px;
+        margin: 0px 120px 0px 120px;
+        height: auto !important;
+    }
+
+    .brandList{
+        height: auto !important;
+        width:100%;
+        display:block;
+    }
+
+    .brandListColumn{
+        width: auto !important;
+        height: auto !important;
+        display: table-cell;
+    }
+
+    .brandListItem{
+        width: 20%;
+        height: 450px;
+        background:white;
+    }
     /*::placeholder{
         color: #9c9c9c;
         visibility:hidden;
