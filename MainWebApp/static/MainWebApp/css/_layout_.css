@@ -3,17 +3,31 @@
 /*-------------------------------------------------------------COMMON USE SECTIONS--------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
-    @keyframes ZoomEffect{
-        from{transform:scale(0)} to{transform:scale(1)}
+@keyframes ZoomEffect{
+    from{transform:scale(0)} to{transform:scale(1)}
+}
+
+*{
+    font-family: sans-serif;
+    color: #444;
+    /*font-family: Candara;*/
+            /*font-family: sans-serif;
+            color: #444;*/
+}
+
+body{
+        /*background-color:#efefef;*/
+        width: 100%;
+        height: auto;
     }
 
+div{
+    display:block;
+    width: 100%;
+    height: auto;
+    z-index:0;
+}
 @media screen and (min-width: 20px) {
-
-    .h1, .h2, .h3, .h4, .h5, .h6, p, input, textarea, a, .submitBtn, .messagePopUp-header h2, ::placeholder, .btnIconImg{
-            /*font-family: Candara;*/
-            font-family: Helvetica;
-            color: #444;
-    }
 
     .h1{font-size:36px;}
     .h2, .messagePopUp-header h2{font-size:30px !important;}
@@ -27,17 +41,50 @@
         padding: 10px;
     }
 
+
+
+    /*style="background-color:#efefef;"*/
     .mainMenuBar, .responsiveMainMenuBar {
-        position: fixed;
         z-index: 1;
         top: 0;
-        height: 80px;
-        width: 100%;
+        /*height: 60px !important;*/
         left: 0;
-        background-color: white;
     }
 
-    .mainMenuBarContainer{
+    .panelSectionDetails{
+        background-image: url("../images/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:100vh;
+        opacity: 0.7;
+    }
+
+    .mainMenuBarContainer {
+        z-index: 1 !important;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .mainMenuBarContainer:hover{
+        box-shadow: -1px 4px 20px 10px rgba(0, 0, 0, 0.26)
+    }
+
+    .mainMenuBarContainerDetails {
+        height: 60px !important;
+        padding: 0px 30px 0px 30px;
+    }
+
+    .logoSection img{
+        height: -webkit-fill-available;
+    }
+
+
+    .mainContent{
+
+    }
+
+    /*.mainMenuBarContainer{
         position:relative;
         height:100%;
         width: calc(100% - 240px);
@@ -232,262 +279,6 @@
         width: 20%;
         height: 450px;
         background:white;
-    }
-    /*::placeholder{
-        color: #9c9c9c;
-        visibility:hidden;
-    }
-
-    a, button, input, textarea{
-        border-radius: 6px;
-        padding: 10px;
-    }
-
-    input{
-        height: 40px !important;
-    }
-
-    input, textarea{
-        width: 100%;
-        background: #f5f5f5;
-        border-style: none;
-    }
-    .submitBtn{
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        color: white;
-        position: relative;
-        background: #49963c;;
-        border: none;
-        top: 30px;
-        width:auto !important;
-        height: 40px;
-    }
-
-    .modal, .loadingBackground, #hiddenLayer{
-        position:fixed;
-        width:100%;
-        height:100%;
-        background: #00000020;
-        z-index: 2;
-        top: 0px;
-        display:none;
-    }
-
-    .loadingBackground, #hiddenLayer{
-           text-align: center;
-    }
-
-
-    @-webkit-keyframes spin {
-      0% { -webkit-transform: rotate(0deg); }
-      100% { -webkit-transform: rotate(360deg); }
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    #hiddenMenuButton, #hiddenMenuButton:hover, #closeMenuButton, #closeMenuButton:hover {
-        cursor: pointer;
-        position: absolute;
-        top: 0px;
-        background: #ffffff00;
-        border-color: #ffffff00;
-        color: #002A46;
-        font-size: 20px;
-        width:60px;
-        height:100%;
-        display: grid;
-        align-items: center;
-    }
-
-
-    #hiddenMenuButton, #hiddenMenuButton:hover {
-        left: 0px;
-    }
-
-    #closeMenuButton, #closeMenuButton:hover {
-        right: 0px;
-    }
-
-
-    .buttonSectionItem:hover, .buttonSectionItemSelected{
-        background: #f19d2b;
-    }
-
-    .mainMenuBar, .responsiveMainMenuBar, .footer {
-        *//*background: #f5f5f5;*//*
-        background: white;
-    }
-
-    .mainMenuBar, .responsiveMainMenuBar{
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        height: 120px;
-        width: 100%;
-        left: 0;
-    }
-
-    .logoSection{
-        text-align: center;
-    }
-
-    .logoSection, .responsiveLogoSection{
-        height:100%;
-        width: 180px;
-        margin-left: 30px;
-        float: left;
-    }
-
-    .logoSection a {
-        padding: 0px;
-    }
-
-    .logoSection a img, .responsiveLogoSection a img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .buttonSection{
-        float: right;
-        margin-top: 10px;
-        height: 100px;
-        margin-right: 30px;
-    }
-
-    .buttonSection a{
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    hr{
-        border-top:none;
-        border-left:none;
-        border-right:none;
-        border-bottom: solid #f19d2b;
-        border-width: 1px;
-        width: calc(100% - 120px);
-        z-index: -1;
-    }
-
-     .mainContent{
-        height: auto !important;
-        position: absolute;
-        width:100%;
-    }
-
-    .contentDetail{
-        top: 0;
-        bottom: 100px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-
-
-    .modal{
-        padding-top: 100px;
-    }
-
-
-    .modal-content {
-        position: relative;
-        background-color: #ffffff00;
-        margin: auto;
-        padding: 0;
-        border: none;
-        width: fit-content;
-        box-shadow: 0 0px 0px 0 rgba(255,255,255,0),0 0px 0px 0 rgba(255,255,255,0);
-        -webkit-animation-name: animatetop;
-        -webkit-animation-duration: 0.4s;
-        animation-name: animatetop;
-        animation-duration: 0.4s
-    }
-
-
-    @-webkit-keyframes animatetop {
-        from {top:-300px; opacity:0}
-        to {top:0; opacity:1}
-    }
-
-    @keyframes animatetop {
-        from {top:-300px; opacity:0}
-        to {top:0; opacity:1}
-    }
-
-    .modal-header{
-        background-color: #D95456;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-    }
-
-    .modal-header h2{
-        color: white;
-    }
-
-    .modal-body{
-        background: white;
-    }
-
-    .modal-footer{
-        background: white;
-        border-bottom-right-radius: 6px;
-        border-bottom-left-radius: 6px;
-    }*/
-
-}
-
-
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------RESPONSIVE SECTIONS--------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*This style is for devices with screen width is larger than 1026px*/
-/*Suitable devices are desktop or tablets in landscape mode 1026*/
-
-@media screen and (min-width: 1000px) {
-
-    /*#hiddenMenuButton, #closeMenuButton{
-        visibility: hidden;
-    }
-
-    .buttonSection a{
-        width: auto !important;
-        display: table-cell;
-        height: 100px;
-        vertical-align: middle;
-    }
-
-    hr{
-        border-top: none;
-        border-left: solid #f19d2b;
-        border-right: solid #f19d2b;
-        border-bottom: solid #f19d2b;
-        border-width: 1px;
-        width: calc(100% - 40px);
-        height: 120px;
-        position: absolute;
-        margin-top: 0;
-        left: 20px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-
-    .responsiveMainMenuBar{
-        display:none;
-    }
-
-     .mainContent{
-        top: 120px;
-        width:100%
     }*/
 
 }
