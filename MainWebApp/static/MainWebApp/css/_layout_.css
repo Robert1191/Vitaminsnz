@@ -31,7 +31,7 @@ div{
 
     .h1{font-size:36px;}
     .h2, .messagePopUp-header h2{font-size:30px !important;}
-    .h3, .btnIconImg{font-size:24px !important;}
+    .h3, .btnIconImg, .mainMenuBtnSection a {font-size:24px !important;}
     .h4, input, textarea{font-size:20px !important;}
     .h5, p, .submitBtn {font-size:18px !important;}
     .h6{font-size:16px !important;}
@@ -42,6 +42,9 @@ div{
     }
 
 
+    .mainMenuBar, .mainContent{
+        padding: 0px 30px 0px 30px;
+    }
 
     /*style="background-color:#efefef;"*/
     .mainMenuBar, .responsiveMainMenuBar {
@@ -51,38 +54,24 @@ div{
         left: 0;
     }
 
-    .panelSectionDetails{
-        background-image: url("../images/bg.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height:100vh;
-        opacity: 0.7;
+    .mainMenuBtnSection{
+        height:60px;
+        background:#f19c2b;
     }
 
-    .mainMenuBarContainer {
-        z-index: 1 !important;
-        top: 0;
-        left: 0;
-        position: absolute;
-    }
-
-    .mainMenuBarContainer:hover{
-        box-shadow: -1px 4px 20px 10px rgba(0, 0, 0, 0.26)
-    }
-
-    .mainMenuBarContainerDetails {
-        height: 60px !important;
-        padding: 0px 30px 0px 30px;
+    .logoSection{
+        height:120px;
+        text-align: center;
     }
 
     .logoSection img{
         height: -webkit-fill-available;
+        padding:3px;
     }
 
 
-    .mainContent{
 
-    }
+
 
     /*.mainMenuBarContainer{
         position:relative;
@@ -294,6 +283,9 @@ div{
     .h4, input, textarea, .buttonSection a{font-size:20px;}
     .h5, p, .submitBtn {font-size:16px;}
     .h6{font-size:14px;}
+
+
+
 
     /*.mainMenuBar .buttonSection{
         display:none;
