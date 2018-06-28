@@ -1,45 +1,49 @@
 $(document).ready(function(){
 
-    var brandList = ["Aptamil", "Absolute Organic", "Barnes Natural", "Bayer", "Bio Island",
-                    "Bio Organics", "Bioglan", "Blossom", "Blackmores", "Bushman",
-                        "Cenovis", "Centrum", "Driclor", "Goat", "Healthy Care Australia",
-                        "Healthy Way", "Just Organic",
-                        "Life Space", "Macro Organic", "Morlife","Nicorette", "Oriental Botanicals", "Ostelin",
-                        "Pentavite", "Prospan", "Swisse", "Sustagen", "Thursday Plantation", "Tom Organic", "Trilogy"
-                    ];
-        for (i = 0; i < brandList.length; i+=12) {
-            var div = $("<div></div>");
-            var ul = $("<ul></ul>");
-            for (a = i; a < i + 12; a++){
-                if(brandList[a] != undefined){
-                     ul.append($('<a class="h5" href="/brands/'+brandList[a] + '/" >'+ brandList[a] + '</a>'));
-                }
+//    var brandList = ["Aptamil", "Absolute Organic", "Barnes Natural", "Bayer", "Bio Island",
+//                    "Bio Organics", "Bioglan", "Blossom", "Blackmores", "Bushman",
+//                        "Cenovis", "Centrum", "Driclor", "Goat", "Healthy Care Australia",
+//                        "Healthy Way", "Just Organic",
+//                        "Life Space", "Macro Organic", "Morlife","Nicorette", "Oriental Botanicals", "Ostelin",
+//                        "Pentavite", "Prospan", "Swisse", "Sustagen", "Thursday Plantation", "Tom Organic", "Trilogy"
+//                    ];
+//        for (i = 0; i < brandList.length; i+=12) {
+//            var div = $("<div></div>");
+//            var ul = $("<ul></ul>");
+//            for (a = i; a < i + 12; a++){
+//                if(brandList[a] != undefined){
+//                     ul.append($('<a class="h5" href="/brands/'+brandList[a] + '/" >'+ brandList[a] + '</a>'));
+//                }
+//
+//            }
+//            div.append(ul);
+//            $('#brandBtnDetails').append(div);
+//
+//        }
+//
+//    href="/sample/abc/"
+//
+//    var productList = ["Thực Phẩm Chức Năng", "Sản Phẩm Organic", "Siêu Thực Phẩm Superfoods", "Sukin Skincare", "Làm Đẹp", "Baby Care" ];
+//
+//    var ul = $("<ul></ul>");
+//    for (i = 0; i < productList.length; i++) {
+//        ul.append($('<a class="h5" onclick="printString(\'' + productList[i] + '\')">'+ productList[i] + '</a>'));
+//    }
+//    $('#productBtnDetails').append(ul);
+//
+//    $('#searchBtn').on( "click", function(e){
+//        $('.buttonSection').css("display", "none");
+//        $('#searchBarSection').css("display", "block");
+//    });
+//
+//    $('#searchCancelBtn').on( "click", function(e){
+//        $('#searchBarSection').css("display", "none");
+//        $('#searchBarSection input').val('');
+//        $('.buttonSection').css("display", "block");
+//    });
 
-            }
-            div.append(ul);
-            $('#brandBtnDetails').append(div);
-
-        }
-
-    href="/sample/abc/"
-
-    var productList = ["Thực Phẩm Chức Năng", "Sản Phẩm Organic", "Siêu Thực Phẩm Superfoods", "Sukin Skincare", "Làm Đẹp", "Baby Care" ];
-
-    var ul = $("<ul></ul>");
-    for (i = 0; i < productList.length; i++) {
-        ul.append($('<a class="h5" onclick="printString(\'' + productList[i] + '\')">'+ productList[i] + '</a>'));
-    }
-    $('#productBtnDetails').append(ul);
-
-    $('#searchBtn').on( "click", function(e){
-        $('.buttonSection').css("display", "none");
-        $('#searchBarSection').css("display", "block");
-    });
-
-    $('#searchCancelBtn').on( "click", function(e){
-        $('#searchBarSection').css("display", "none");
-        $('#searchBarSection input').val('');
-        $('.buttonSection').css("display", "block");
+    $('#mainMenuSearchBtn').on( "click", function(e){
+        $('#mainMenuSearchBox').css("display", "inline-block");
     });
 
 });

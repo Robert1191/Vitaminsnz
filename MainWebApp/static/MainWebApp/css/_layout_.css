@@ -31,8 +31,8 @@ div{
 
     .h1{font-size:36px;}
     .h2, .messagePopUp-header h2{font-size:30px !important;}
-    .h3, .btnIconImg, .mainMenuBtnSection a {font-size:24px !important;}
-    .h4, input, textarea{font-size:20px !important;}
+    .h3, .btnIconImg{font-size:24px !important;}
+    .h4, input, textarea, .mainMenuBtnSection a, .mainMenuBtnSection div {font-size:20px !important;}
     .h5, p, .submitBtn {font-size:18px !important;}
     .h6{font-size:16px !important;}
 
@@ -57,6 +57,7 @@ div{
     .mainMenuBtnSection{
         height:60px;
         background:#f19c2b;
+        text-align: center;
     }
 
     .logoSection{
@@ -70,9 +71,40 @@ div{
     }
 
 
+    .mainMenuBtnSection > *, .mainMenuBtnSection i {
+        display: inline-block;
+        margin: 0px !important;
+        line-height: 40px;
+        color:#e2eee0;
+    }
 
+    .mainMenuBtnSection > *:hover{
+        text-decoration:none;
+        color:white;
+        optical:0.7;
+    }
 
+    #mainMenuSearchBox{
+        position: absolute;
+        height: 60px;
+        left: 30px;
+        display: none;
+        background: red;
+        width: calc(100% - 60px);
+        animation: ZoomEffect 0.5s;
+    }
 
+    .mainMenuBtnDetails{
+        background:red;
+        height:200px;
+        width:200px;
+        position:absolute;
+        display:none;
+    }
+
+    .mainMenuBtnSectionItem:hover .mainMenuBtnDetails{
+        display:block;
+    }
     /*.mainMenuBarContainer{
         position:relative;
         height:100%;

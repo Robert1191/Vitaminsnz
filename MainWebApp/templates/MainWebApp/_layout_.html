@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
     {% load staticfiles %}
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="{% static 'MainWebApp/images/Icon.gif' %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'MainWebApp/css/bootstrap.min.css' %}">
@@ -24,14 +25,44 @@
             </div>
 
         <div class="mainMenuBtnSection">
-                <a href="{% url 'home' %}">Th?c ph?m ch?c n?ng</a>
-              <a href="{% url 'home' %}">Si�u th?c ph?m & Organic</a>
-                <a href="{% url 'home' %}">M? v� B�</a>
-            <a href="{% url 'home' %}">M? ph?m</a>
-            <a href="{% url 'home' %}">Khuy?n m�i</a>
-            <a href="{% url 'home' %}">Nh�n h�ng</a>
-            <a href="{% url 'home' %}">Th�ng tin</a>
-            <a href="{% url 'home' %}">Ch?m s�c kh�ch h�ng</a>
+            <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Thực phẩm chức năng <i class="fa fa-angle-down"></i>
+                <div class="mainMenuBtnDetails" >
+
+                </div>
+            </a>
+             <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Siêu thực phẩm & Organic <i class="fa fa-angle-down"></i>
+                <div class="mainMenuBtnDetails" >
+
+                </div>
+             </a>
+
+            <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Mẹ & bé <i class="fa fa-angle-down"></i>
+                <div class="mainMenuBtnDetails" >
+
+                </div>
+            </a>
+
+            <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Mỹ phẩm <i class="fa fa-angle-down"></i>
+                <div class="mainMenuBtnDetails" >
+
+                </div>
+            </a>
+
+            <a href="{% url 'home' %}">Khuyến mãi</a>
+            <a href="{% url 'home' %}">Nhãn hàng</a>
+            <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Thông tin <i class="fa fa-angle-down"></i>
+                <div class="mainMenuBtnDetails" >
+
+                </div>
+            </a>
+
+            <a  class="mainMenuBtnSectionItem" href="{% url 'home' %}">Chăm sóc khách hàng <i class="fa fa-angle-down"></i>
+                <div class="mainMenuBtnDetails" >
+
+                </div>
+            </a>
+            <a id="mainMenuSearchBtn"><i class="fa fa-search"></i></a>
+            <div id="mainMenuSearchBox"></div>
               <!--<div class="dropdown">-->
                 <!--<button class="dropbtn">Dropdown -->
                   <!--<i class="fa fa-caret-down"></i>-->
