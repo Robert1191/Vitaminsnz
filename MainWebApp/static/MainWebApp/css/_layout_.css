@@ -7,6 +7,12 @@
     from{transform:scale(0)} to{transform:scale(1)}
 }
 
+@keyframes LeftEffect{
+    from{left:-500px;opacity:0} to{left:0;opacity:1}}
+
+@keyframes RightEffect{
+    from {left:0;opacity:1} to{left:-500px;opacity:0}}
+
 *{
     font-family: sans-serif;
     color: #444;
@@ -16,10 +22,13 @@
 }
 
 body{
-        /*background-color:#efefef;*/
         width: 100%;
         height: auto;
     }
+
+body > div{
+    display:block;
+}
 
 div{
     display:block;
@@ -29,10 +38,10 @@ div{
 }
 @media screen and (min-width: 20px) {
 
-    .h1{font-size:36px;}
+    .h1{font-size:36px !important;}
     .h2, .messagePopUp-header h2{font-size:30px !important;}
     .h3, .btnIconImg{font-size:24px !important;}
-    .h4, input, textarea, .mainMenuBtnSection a, .mainMenuBtnSection div {font-size:20px !important;}
+    .h4, input, textarea{font-size:20px !important;}
     .h5, p, .submitBtn {font-size:18px !important;}
     .h6{font-size:16px !important;}
 
@@ -41,424 +50,232 @@ div{
         padding: 10px;
     }
 
-
-    .mainMenuBar, .mainContent{
-        padding: 0px 30px 0px 30px;
+    .mainMenuBar, .responsiveMainMenuBar, .footer {
+        background: #f5f5f5;
     }
 
     /*style="background-color:#efefef;"*/
     .mainMenuBar, .responsiveMainMenuBar {
         z-index: 1;
         top: 0;
-        /*height: 60px !important;*/
+        height: 100px !important;
         left: 0;
     }
 
-    .mainMenuBtnSection{
-        height:60px;
-        background:#f19c2b;
-        text-align: center;
+    .mainMenuBar{
+        position:fixed;
+    }
+
+    .mainMenuBarContainer {
+        z-index: 1 !important;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .mainMenuBarContainerDetails, .mainContent, .footerDetails {
+        margin: auto;
+        max-width: 1920px;
+        padding: 0px 60px 0px 60px;
+    }
+
+    .hiddenBtn{
+        display:none;
     }
 
     .logoSection{
-        height:120px;
-        text-align: center;
+        width: fit-content;
+        display: inline-block;
     }
 
     .logoSection img{
         height: -webkit-fill-available;
-        padding:3px;
     }
 
-
-    .mainMenuBtnSection > *, .mainMenuBtnSection i {
-        display: inline-block;
-        margin: 0px !important;
-        line-height: 40px;
-        color:#e2eee0;
-    }
-
-    .mainMenuBtnSection > *:hover{
-        text-decoration:none;
-        color:white;
-        optical:0.7;
-    }
-
-    #mainMenuSearchBox{
-        position: absolute;
-        height: 60px;
-        left: 30px;
-        display: none;
-        background: red;
-        width: calc(100% - 60px);
-        animation: ZoomEffect 0.5s;
-    }
-
-    .mainMenuBtnDetails{
-        background:red;
-        height:200px;
-        width:200px;
-        position:absolute;
-        display:none;
-    }
-
-    .mainMenuBtnSectionItem:hover .mainMenuBtnDetails{
-        display:block;
-    }
-    /*.mainMenuBarContainer{
-        position:relative;
-        height:100%;
-        width: calc(100% - 240px);
-        left:120px;
-    }
-
-    .logoSection{
-        position: absolute;
-        background-color:white;
-        height: 80px;
-        width: 120px;
-        left: 0px;
-        animation: ZoomEffect 0.4s;
-    }
-
-    .logoSection a {
-        padding:0px;
-    }
-
-    .logoSection a img, .responsiveLogoSection a img{
-        width: 100%;
-        height: 100%;
-        padding:10px 15px 15px 15px;
-    }
-
-    .buttonSection{
+    .btnSection{
+        width: auto;
         float: right;
-        height: 80px;
-        width: calc(100% - 120px);
-        margin:0px;
-        text-align: end;
+        height: 100px;
     }
 
-    .buttonSection > *{
+    .btnSectionItem, .btnSectionItem:hover{
         cursor: pointer;
         text-align: center;
         text-decoration: none;
-        padding:10px 30px 10px 30px;
-        text-transform: uppercase;
-        animation: ZoomEffect 0.4s;
-    }
-    .buttonSectionItem{
-        display: inline-block;
-        height: 75px;
-        margin: 0px;
         line-height: 60px;
-    }
-
-    .buttonSectionItem:hover, .btnIconImg:hover{
-        background: white;
-        color:#f19d2b;
-    }
-    .buttonSectionItem:hover, a:hover, li:hover, i:hover{
-        color:#f19d2b;
-    }
-    #shoppingBtn:hover #shoppingBtnDetails, #inforBtn:hover #inforBtnDetails , #brandBtn:hover #brandBtnDetails, #productBtn:hover #productBtnDetails{
-        display: block;
-        text-transform: capitalize;
-     }
-
-    #shoppingBtnDetails, #inforBtnDetails, #brandBtnDetails, #productBtnDetails{
-        display: none;
-        height:auto !important;
-        width:auto !important;
-        right: 30px;
-        top: 50px;
+        display: inline-block;
         margin-top: 10px;
-        background: white;
-        position: absolute;
-        border-style: solid none solid none;
-        animation: ZoomEffect 0.4s;
     }
 
-    #shoppingBtnDetails > ul, #inforBtnDetails >ul, #brandBtnDetails > div ul, #productBtnDetails >ul{
-        width:auto !important;
-        height:auto !important;
-        display: contents;
+    .btnSectionItem:hover, .btnSectionItemSelected{
+        color:white;
     }
 
-    #shoppingBtnDetails > ul a, #inforBtnDetails > ul a, #brandBtnDetails > div ul a, #productBtnDetails >ul a{
-         display: block;
-         text-align: left;
-         padding: 10px 100px 10px 20px;
+    .btnSectionItem:nth-child(1):hover, .btnSectionItemSelected:nth-child(1){
+        background: #f4a35c;
     }
 
-    #shoppingBtnDetails > ul a:hover, #inforBtnDetails > ul a:hover, #brandBtnDetails > div ul a:hover, #productBtnDetails >ul a:hover{
-        text-decoration:none;
-        padding: 10px 70px 10px 50px;
+    .btnSectionItem:nth-child(2):hover, .btnSectionItemSelected:nth-child(2){
+        background: #da5355;
     }
 
-     #shoppingBtnDetails > ul a span {
-        margin-right: 20px !important;
+    .btnSectionItem:nth-child(3):hover, .btnSectionItemSelected:nth-child(3){
+        background: #42a2a0;
     }
 
-    #inforBtnDetails{
-        right: 200px;
-    }
-
-    #inforBtnDetails > ul a{
-        padding: 10px 60px 10px 20px;
-    }
-
-    #inforBtnDetails > ul a:hover{
-        padding: 10px 30px 10px 50px;
-    }
-
-    #brandBtnDetails{
-        right: 600px;
-    }
-
-    #brandBtnDetails > div ul a{
-        padding: 10px 60px 10px 20px;
-    }
-
-    #brandBtnDetails > div ul a:hover{
-        padding: 10px 30px 10px 50px;
-    }
-
-    #brandBtnDetails{
-        right: 400px;
-    }
-    #brandBtnDetails > div{
-        width:auto !important;
-        height:auto !important;
-        display:table-cell;
-    }
-
-    #productBtnDetails{
-        right: 700px;
-    }
-
-    #productBtnDetails > ul a{
-        padding: 10px 60px 10px 20px;
-    }
-
-    #productBtnDetails > ul a:hover{
-        padding: 10px 30px 10px 50px;
+    .btnSectionItem:nth-child(4):hover i{
+        color: #da5355;
     }
 
     .mainContent{
-        height: auto !important;
-        position: absolute;
-        margin-top: 130px;
-        width:100%;
+        position: relative;
+        top: 100px;
     }
-
-    #searchBarSection{
-        display:none;
-        background: white;
-        float: right;
-        height: 80px;
-        width: 0px;
-        width: calc(100% - 120px);
-        position: absolute;
-        margin: 0px 0px 0px 120px;
-        animation: ZoomEffect 1s;
-        text-align: center;
-        line-height: 85px;
-    }
-
-    #searchBarSection > li{
-        height:60px;
-    }
-
-    #searchBarSection input{
-        width: 80%;
-        border: none;
-        height: 60px;
-        margin: 0px 0px 0px 20px;
-    }
-
-    .contentDetail{
-        top: 0;
-        bottom: 100px;
-        margin: 0px 120px 0px 120px;
-        height: auto !important;
-    }
-
-    .brandList{
-        height: auto !important;
-        width:100%;
-        display:block;
-    }
-
-    .brandListColumn{
-        width: auto !important;
-        height: auto !important;
-        display: table-cell;
-    }
-
-    .brandListItem{
-        width: 20%;
-        height: 450px;
-        background:white;
-    }*/
 
 }
 
 
-/*This style is for devices with screen width is up to 1025px*/
-/*Suitable devices are tablets 1025*/
+/*This style is for devices with screen width is from 1000px*/
+/*Suitable devices are ipad pro and desktops*/
+@media screen and (min-width: 1000px) {
+    .responsiveMainMenuBar{
+        display:none;
+    }
+}
+
+/*This style is for devices with screen width is up to 999px*/
+/*Suitable devices are tablets*/
 @media screen and (max-width: 999px) {
 
-    .h1{font-size:34px;}
-    .h2, .messagePopUp-header h2{font-size:28px;}
-    .h3, .btnIconImg{font-size:22px !important;}
-    .h4, input, textarea, .buttonSection a{font-size:20px;}
-    .h5, p, .submitBtn {font-size:16px;}
-    .h6{font-size:14px;}
+    .h1, .hiddenBtn span, .closeMenuBtn {font-size:32px !important;}
+    .h2, .messagePopUp-header h2{font-size:26px !important;}
+    .h3, .btnIconImg{font-size:20px !important;}
+    .h4, input, textarea, .buttonSection a{font-size:18px !important;}
+    .h5, p, .submitBtn {font-size:14px !important;}
+    .h6{font-size:12px !important;}
 
-
-
-
-    /*.mainMenuBar .buttonSection{
+    .mainMenuBarContainerDetails .btnSection{
         display:none;
     }
 
-    .mainMenuBar, .closeMenuButtonSection{
-        position:absolute;
-        height:72px;
+    .mainMenuBar{
+        height:72px !important;
+    }
+
+    .mainMenuBarContainerDetails{
+        text-align:center;
+    }
+
+    .mainMenuBarContainerDetails, .mainContent, .footerDetails {
+        padding: 0px 25px 0px 25px;
+    }
+
+    .hiddenBtn{
+        display: grid;
+        height: 72px;
+        width: 72px;
+        float: left;
+        text-align: left;
+    }
+
+    .hiddenBtn span{
+        margin-top: 15px;
     }
 
     .logoSection{
-        width: calc(100% - 30px);
-        right:0px;
-    }
-
-    .logoSection a img, .responsiveLogoSection a img{
-        width: 108px;
-        height: 100%;
-    }
-
-    .logoSection a img{
-        margin-left: -60px;
-    }
-
-    hr{
-        width: calc(100% - 50px);
+        margin-left:-72px;
     }
 
     .responsiveMainMenuBar{
-        height: 100%;
+        display: none;
+        z-index: 2 !important;
         width: 400px;
-        left: -400px;
-        z-index:3;
-        -webkit-transition: left 0.2s;
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-    }
-    .closeMenuButtonSection{
-        width:100%;
-    }
-    .buttonSection{
-        width:100%;
-        height: auto !important;
-        margin-top:72px;
+        height: 100% !important;
+        border-radius: 6px;
+        position: fixed;
+        animation: LeftEffect 0.5s;
     }
 
-    .buttonSection a{
+    .closeMenuBtnSection{
+        height:72px;
+    }
+
+    .btnSection{
+        width:100%;
+        height: auto !important;
+    }
+
+    .btnSectionItem{
         width: 100%;
         display: block;
-        font-size: 22px;
         line-height: 72px;
         border-radius: 0px;
+    }
+
+    .closeMenuBtn{
+        height: 100%;
+        text-align: right;
+        padding-right: 25px;
+        line-height: 72px;
     }
 
     .mainContent{
         top: 72px;
     }
-
-    .contentDetail{
-        margin-left:25px;
-        margin-right:25px;
-    }
-
-    .modal {
-        top: 0px;
-    }*/
-
 }
 
+/*This style is for devices with screen width is up to 500px*/
+/*Suitable devices are mobile phone*/
 @media screen and (max-width: 500px) {
 
-    .h1{font-size:30px;}
-    .h2, .messagePopUp-header h2{font-size:24px;}
-    .h3, .btnIconImg {font-size:18px !important;}
-    .h4, input, textarea, .buttonSection a , .submitBtn {font-size:16px;}
-    .h5, p{font-size:12px;}
-    .h6{font-size:10px;}
+    .h1{font-size:30px !important;}
+    .h2, .messagePopUp-header h2, .closeMenuBtn{font-size:24px !important;}
+    .h3, .btnIconImg, .hiddenBtn span {font-size:18px !important;}
+    .h4, input, textarea, .buttonSection a , .submitBtn  {font-size:16px !important;}
+    .h5, p{font-size:12px !important;}
+    .h6{font-size:10px !important;}
 
-    /*::placeholder{
-        visibility:visible;
+    .mainMenuBar{
+        height:48px !important;
+        position: absolute;
+    }
+
+    .mainMenuBarContainerDetails, .mainContent, .footerDetails {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .hiddenBtn{
+        height: 48px;
+        width: 48px;
+    }
+
+    .hiddenBtn span{
+        margin-top: 12px;
+    }
+
+    .logoSection{
+        margin-left:-48px;
     }
 
     .responsiveMainMenuBar{
         width: 100%;
-        left: -100%;
-        border-radius:0px;
+        border-radius: 0px;
     }
 
-    .mainMenuBar, .closeMenuButtonSection{
-        height:48px;
-    }
-
-    .logoSection a img, .responsiveLogoSection a img{
-        width: 72px;
-    }
-
-    #hiddenMenuButton, #hiddenMenuButton:hover, #closeMenuButton, #closeMenuButton:hover {
-        font-size: 18px;
-        width:48px;
-    }
-    #hiddenMenuButton, #hiddenMenuButton:hover{
-        display: flex;
-    }
-
-    .buttonSection a{
-        font-size: 18px;
+    .closeMenuBtn{
         line-height: 48px;
     }
 
-    hr{
-        width: calc(100% - 20px);
+    .closeMenuBtnSection{
+        height:48px;
+    }
+
+    .btnSectionItem{
+        line-height: 48px;
     }
 
     .mainContent{
         top: 48px;
     }
-
-    .contentDetail{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .formLabel{
-        display: none;
-    }*/
-
 }
-
-/*@media screen and (max-width: 500px) {
-    .contentDetail{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
-@media screen and (max-height: 1023px) {
-    .mainMenuBar{
-        height: 1024px;
-        overflow-y: auto;
-        position: absolute;
-    }
-
-}*/
 

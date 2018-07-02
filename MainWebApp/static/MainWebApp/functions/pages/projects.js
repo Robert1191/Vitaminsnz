@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    mainFunc_PageTitle("Công Trình - Vitamins NZ");
+    _layout_ChangeTitleText("Công Trình");
 
-    mainFunc_SetMenuBtnColor("projects");
+    _layout_SetMenuBtnColor("projects");
 });

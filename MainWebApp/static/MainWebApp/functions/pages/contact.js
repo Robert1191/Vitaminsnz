@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    mainFunc_PageTitle("Liên Lạc - Vitamins NZ");
+    _layout_ChangeTitleText("Liên Lạc");
 
-    mainFunc_SetMenuBtnColor("contact");
+    _layout_SetMenuBtnColor("contact");
 
 });
 

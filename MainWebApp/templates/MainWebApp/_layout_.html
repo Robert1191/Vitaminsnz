@@ -2,9 +2,8 @@
 <html lang="vi">
 <head>
     {% load staticfiles %}
-    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="{% static 'MainWebApp/images/Icon.gif' %}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <link rel="stylesheet" href="{% static 'MainWebApp/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'MainWebApp/css/_layout_.css' %}">
     <link rel="stylesheet" href="{% static 'MainWebApp/css/font-awesome.min.css' %}">
@@ -14,75 +13,47 @@
 <body >
 
 <div class="mainMenuBar">
-    <!--<div class="panelSection">
-        <div class="panelSectionDetails">
 
-        </div>
-    </div>-->
-
-    <div class="logoSection">
+    <div class="mainMenuBarContainer">
+        <div class="mainMenuBarContainerDetails">
+            <div class="hiddenBtn">
+                <span >&#9776;</span>
+            </div>
+            <div class="logoSection">
                 <a href="{% url 'home' %}" ><img src="{% static 'MainWebApp/images/logo.png' %}" ></a>
             </div>
 
-        <div class="mainMenuBtnSection">
-            <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Thực phẩm chức năng <i class="fa fa-angle-down"></i>
-                <div class="mainMenuBtnDetails" >
-
-                </div>
-            </a>
-             <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Siêu thực phẩm & Organic <i class="fa fa-angle-down"></i>
-                <div class="mainMenuBtnDetails" >
-
-                </div>
-             </a>
-
-            <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Mẹ & bé <i class="fa fa-angle-down"></i>
-                <div class="mainMenuBtnDetails" >
-
-                </div>
-            </a>
-
-            <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Mỹ phẩm <i class="fa fa-angle-down"></i>
-                <div class="mainMenuBtnDetails" >
-
-                </div>
-            </a>
-
-            <a href="{% url 'home' %}">Khuyến mãi</a>
-            <a href="{% url 'home' %}">Nhãn hàng</a>
-            <a class="mainMenuBtnSectionItem" href="{% url 'home' %}">Thông tin <i class="fa fa-angle-down"></i>
-                <div class="mainMenuBtnDetails" >
-
-                </div>
-            </a>
-
-            <a  class="mainMenuBtnSectionItem" href="{% url 'home' %}">Chăm sóc khách hàng <i class="fa fa-angle-down"></i>
-                <div class="mainMenuBtnDetails" >
-
-                </div>
-            </a>
-            <a id="mainMenuSearchBtn"><i class="fa fa-search"></i></a>
-            <div id="mainMenuSearchBox"></div>
-              <!--<div class="dropdown">-->
-                <!--<button class="dropbtn">Dropdown -->
-                  <!--<i class="fa fa-caret-down"></i>-->
-                <!--</button>-->
-                <!--<div class="dropdown-content">-->
-                  <!--<a href="#">Link 1</a>-->
-                  <!--<a href="#">Link 2</a>-->
-                  <!--<a href="#">Link 3</a>-->
-                <!--</div>-->
-              <!--</div>-->
+            <div class="btnSection">
+                <a class="btnSectionItem h3" href="{% url 'about' %}" >GIỚI THIỆU</a>
+                <a class="btnSectionItem h3" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
+                <a class="btnSectionItem h3" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
+                <a class="btnSectionItem btnStaffLogin h3" href="{% url 'home' %}"><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
             </div>
+        </div>
 
+    </div>
 </div>
 
+ <div class="responsiveMainMenuBar">
+     <div class="closeMenuBtnSection">
+         <div class="closeMenuBtn">
+            <span >&#x2716;</span></div>
+     </div>
+
+    <div class="btnSection">
+         <a class="btnSectionItem h3" href="{% url 'about' %}" >GIỚI THIỆU</a>
+        <a class="btnSectionItem h3" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
+        <a class="btnSectionItem h3" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
+        <a class="btnSectionItem btnStaffLogin h3" href="{% url 'home' %}"><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
+    </div>
+ </div>
 <div class="mainContent">
 
   {% block content %}
     {% endblock %}
 
-</div>
+</div >
 
+{% include "MainWebApp/widgets/footer.html" %}
 </body>
 </html>

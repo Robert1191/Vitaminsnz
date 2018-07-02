@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    mainFunc_PageTitle("Giới Thiệu - Vitamins NZ");
+    _layout_ChangeTitleText("Giới Thiệu");
 
-    mainFunc_SetMenuBtnColor ("about");
+    _layout_SetMenuBtnColor ("about");
 
 });
 

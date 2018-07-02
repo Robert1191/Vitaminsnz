@@ -15,3 +15,12 @@ from django.conf import settings
 
 def home(request):
     return render(request,"MainWebApp/pages/home.html")
+
+def about(request):
+    return render(request,"MainWebApp/pages/about.html")
+
+def projects(request):
+    return render(request,"MainWebApp/pages/projects.html")
+
+def contact(request):
+    return render(request,"MainWebApp/pages/contact.html")
