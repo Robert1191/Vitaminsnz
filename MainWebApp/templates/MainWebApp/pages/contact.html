@@ -12,7 +12,7 @@
             {% csrf_token %}
             <div class="formGroupHalf" style="float: left">
                 <div class="formLabel"><h4 class="h4">Tên họ <span class="importantStar">*</span></h4></div>
-                <input type="text" style="margin-bottom:30px" name="name" value="{{ name }}" required
+                <input type="text" name="name" value="{{ name }}" required
                     oninvalid="this.setCustomValidity('Xin vui lòng điền tên và họ.')" oninput="setCustomValidity('')"
                        placeholder="Tên họ"
                 ><br>
@@ -26,13 +26,13 @@
 
             <div class="formGroupHalf" style="float: right">
                 <div class="formLabel"><h4 class="h4">Điện thoại</h4></div>
-                <input type="text" style="margin-bottom:30px" name="phone" value="{{ phone }}" placeholder="Điện thoại"><br>
+                <input type="text"  name="phone" value="{{ phone }}" placeholder="Điện thoại"><br>
 
                 <div class="formLabel"><h4 class="h4">Địa chỉ</h4></div>
                 <input type="text" name="address" value="{{ address }}" placeholder="Địa chỉ"><br>
             </div>
 
-            <div class="formGroupFull" style="margin: 30px 0px 30px 0px">
+            <div class="formGroupFull" >
                 <div class="formLabel"><h4 class="h4">Tin nhắn</h4></div>
                 <textarea type="text" name="message" value="{{ message }}" placeholder="Tin nhắn"></textarea><br>
             </div>

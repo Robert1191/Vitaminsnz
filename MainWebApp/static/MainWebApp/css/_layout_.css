@@ -4,15 +4,38 @@
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
 @keyframes ZoomEffect{
-    from{transform:scale(0)} to{transform:scale(1)}
+    from{transform:scale(0)}
+    to{transform:scale(1)}
+}
+
+@-webkit-keyframes ZoomEffect{
+    from{transform:scale(0)}
+    to{transform:scale(1)}
 }
 
 @keyframes LeftEffect{
-    from{left:-500px;opacity:0} to{left:0;opacity:1}}
+    from{left:-500px;opacity:0}
+    to{left:0;opacity:1}
+    }
 
-@keyframes RightEffect{
-    from {left:0;opacity:1} to{left:-500px;opacity:0}}
+@-webkit-keyframes LeftEffect{
+    from{left:-500px;opacity:0}
+    to{left:0;opacity:1}
+    }
 
+@keyframes SpinMotion {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes SpinMotion {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+
+
+/*-------------------------------------------------------------STYLES SECTION--------------------------------------------------------------*/
 *{
     font-family: sans-serif;
     color: #444;
@@ -75,6 +98,18 @@ div{
         border: none;
         width:auto !important;
         height: 40px;
+    }
+
+    .modal, .loadingBackground, #hiddenLayer{
+        position:fixed;
+        width:100%;
+        height:100%;
+        background: #0000004a;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        animation: ZoomEffect 0.5s;
+        display:none;
     }
 
     .importantStar{
@@ -163,6 +198,41 @@ div{
         top: 100px;
     }
 
+    .modal{
+        padding-top: 120px;
+    }
+
+
+    .modal-content {
+        position: relative;
+        background-color: #ffffff00 !important;
+        margin: auto;
+        padding: 0;
+        border: none;
+        width: fit-content;
+        box-shadow: 0 0px 0px 0 rgba(255,255,255,0),0 0px 0px 0 rgba(255,255,255,0);
+    }
+
+
+    .modal-header{
+        background-color: #D95456 !important;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .modal-header h2{
+        color: white !important;
+    }
+
+    .modal-body{
+        background: white !important;
+    }
+
+    .modal-footer{
+        background: white !important;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
 }
 
 
@@ -216,10 +286,13 @@ div{
     .logoSection{
         margin-left:-72px;
     }
+    #hiddenLayer{
+        animation: LeftEffect 0.25s;
+    }
 
     .responsiveMainMenuBar{
         display: none;
-        z-index: 2 !important;
+        z-index: 3 !important;
         width: 400px;
         height: 100% !important;
         border-radius: 6px;

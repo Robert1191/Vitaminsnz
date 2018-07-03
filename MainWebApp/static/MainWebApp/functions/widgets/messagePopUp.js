@@ -14,5 +14,5 @@ function messagePopUp_Creation(typeOfMessage, title, message){
 }
 
 function messagePopUp_Close(){
-         mainFunc_RefreshPage();
+         _layout_RefreshPage();
 }

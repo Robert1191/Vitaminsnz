@@ -47,9 +47,14 @@
         position:relative;
     }
 
+    .formGroupHalf input{
+        margin-bottom: 30px;
+    }
+
     .formGroupFull{
         float: left;
         position:relative;
+        margin: 0px 0px 30px 0px;
     }
 
     .formGroupFull textarea{
@@ -110,17 +115,25 @@
     }
 
     #contactForm > *, #contactDetails > *{
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
+
     #contactForm{
         border-right-style: none;
     }
 
     .formGroupHalf {
         width: 100%;
-        height: 90px;
-        margin: 0px 0px 20px 0px;
+        margin: 0px;
         display: grid;
+    }
+
+    .formGroupHalf input{
+        margin-bottom: 0px;
+    }
+
+    .formGroupFull{
+        margin: 0px 0px 15px 0px;
     }
 
     #contactDetails {

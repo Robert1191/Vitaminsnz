@@ -11,13 +11,15 @@
     <script language="JavaScript" type="text/javascript" src="{% static 'MainWebApp/functions/_layout_.js' %}"></script>
 </head>
 <body >
-
+{% include "MainWebApp/widgets/loadingBackground.html" %}
+{% include "MainWebApp/widgets/messagePopUp.html" %}
+{% include "MainWebApp/widgets/staffLoginForm.html" %}
 <div class="mainMenuBar">
 
     <div class="mainMenuBarContainer">
         <div class="mainMenuBarContainerDetails">
             <div class="hiddenBtn">
-                <i class="fa fa-bars btnIconImg" style="margin:auto;"></i>
+                <i class="fa fa-bars btnIconImg" style="margin:auto auto auto 0px;"></i>
             </div>
             <div class="logoSection">
                 <a href="{% url 'home' %}" ><img src="{% static 'MainWebApp/images/logo.png' %}" ></a>
@@ -28,7 +30,7 @@
                 </a>
                 <a class="btnSectionItem h3" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
                 <a class="btnSectionItem h3" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
-                <a class="btnSectionItem btnStaffLogin h3" href="{% url 'home' %}"><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
+                <a class="btnSectionItem btnStaffLogin h3" ><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
             </div>
         </div>
 
@@ -46,7 +48,7 @@
          <a class="btnSectionItem h3" href="{% url 'about' %}" >GIỚI THIỆU</a>
         <a class="btnSectionItem h3" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
         <a class="btnSectionItem h3" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
-        <a class="btnSectionItem btnStaffLogin h3" href="{% url 'home' %}"><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
+        <a class="btnSectionItem btnStaffLogin h3" ><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
     </div>
  </div>
 <div class="mainContent">
@@ -55,7 +57,9 @@
     {% endblock %}
 
 </div >
+<div id="hiddenLayer" >
 
+    </div>
 {% include "MainWebApp/widgets/footer.html" %}
 </body>
 </html>

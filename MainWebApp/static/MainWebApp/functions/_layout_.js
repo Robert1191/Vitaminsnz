@@ -1,13 +1,37 @@
 $(document).ready(function(){
+    var isHiddenMenuOpen = false;
 
     $('.hiddenBtn').on( "click", function(e) {
-        $('.responsiveMainMenuBar').css('animation','LeftEffect 0.5s');
-        $('.responsiveMainMenuBar').css('display', 'block');
+        openHiddenMenu();
     });
 
     $('.closeMenuBtn').on( "click", function(e) {
-        $('.responsiveMainMenuBar').css('display', 'none');
+        closeHiddenMenu();
     });
+
+    $('#hiddenLayer').on( "click", function(e) {
+            closeHiddenMenu();
+    });
+
+    $('.btnStaffLogin').on( "click", function(e) {
+         if(isHiddenMenuOpen){
+            closeHiddenMenu();
+        }
+        staffLoginForm_Open();
+    });
+
+
+    function openHiddenMenu(){
+        isHiddenMenuOpen = true;
+        $('.responsiveMainMenuBar').css('display', 'block');
+        $('#hiddenLayer').css("display", "block");
+    }
+
+    function closeHiddenMenu(){
+        $('.responsiveMainMenuBar').css('display', 'none');
+        $('#hiddenLayer').css("display", "none");
+        isHiddenMenuOpen = false;
+    }
 
 });
 
@@ -21,9 +45,12 @@ function _layout_SetMenuBtnColor(pageName){
         (($(".btnSection").children()[i]).className).replace("btnSectionItemSelected","");
         if (($(".btnSection").children()[i]).className != "btnStaffLogin"){
             if(($(".btnSection").children()[i].href).toLowerCase().indexOf(pageName) > 0){
-                console.log((($(".btnSection").children()[i]).className));
                 ($(".btnSection").children()[i]).className = ($(".btnSection").children()[i]).className + " btnSectionItemSelected";
             }
         }
     }
+}
+
+function _layout_RefreshPage(){
+    location.reload();
 }
