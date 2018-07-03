@@ -50,6 +50,37 @@ div{
         padding: 10px;
     }
 
+    input{
+        height: 40px !important;
+    }
+
+    input, textarea{
+        width: 100%;
+        background: #f5f5f5;
+        border-style: none;
+    }
+
+    ::placeholder{
+        color: #9c9c9c !important;
+        visibility:hidden;
+    }
+
+    .submitBtn{
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        color: white !important;
+        position: relative;
+        background: #D95456 !important;
+        border: none;
+        width:auto !important;
+        height: 40px;
+    }
+
+    .importantStar{
+        color:#D95456 !important;
+    }
+
     .mainMenuBar, .responsiveMainMenuBar, .footer {
         background: #f5f5f5;
     }
@@ -234,6 +265,14 @@ div{
     .h4, input, textarea, .buttonSection a , .submitBtn  {font-size:16px !important;}
     .h5, p{font-size:12px !important;}
     .h6{font-size:10px !important;}
+
+    ::placeholder{
+        visibility:visible;
+    }
+
+    .formLabel{
+        display:none;
+    }
 
     .mainMenuBar{
         height:48px !important;

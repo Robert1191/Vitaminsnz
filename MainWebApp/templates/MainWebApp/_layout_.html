@@ -17,14 +17,15 @@
     <div class="mainMenuBarContainer">
         <div class="mainMenuBarContainerDetails">
             <div class="hiddenBtn">
-                <span >&#9776;</span>
+                <i class="fa fa-bars btnIconImg" style="margin:auto;"></i>
             </div>
             <div class="logoSection">
                 <a href="{% url 'home' %}" ><img src="{% static 'MainWebApp/images/logo.png' %}" ></a>
             </div>
 
             <div class="btnSection">
-                <a class="btnSectionItem h3" href="{% url 'about' %}" >GIỚI THIỆU</a>
+                <a class="btnSectionItem h3" href="{% url 'about' %}" >GIỚI THIỆU
+                </a>
                 <a class="btnSectionItem h3" href="{% url 'projects' %}" selected="false">CÔNG TRÌNH</a>
                 <a class="btnSectionItem h3" href="{% url 'contact' %}" selected="false">LIÊN LẠC</a>
                 <a class="btnSectionItem btnStaffLogin h3" href="{% url 'home' %}"><i class="fa fa-user-o btnIconImg" style="margin:auto;"></i></a>
@@ -37,7 +38,8 @@
  <div class="responsiveMainMenuBar">
      <div class="closeMenuBtnSection">
          <div class="closeMenuBtn">
-            <span >&#x2716;</span></div>
+             <i class="fa fa-close btnIconImg" style="margin:auto;"></i>
+         </div>
      </div>
 
     <div class="btnSection">

@@ -4,9 +4,86 @@
 
 {% load staticfiles %}
 <div class="contentDetail">
-    <h2 class="h2" >Contact</h2>
+    <div id="contactLocation">
+        <div id="contactForm">
+            <h3 class="h3">Ý KIẾN KHÁCH HÀNG</h3>
+
+            <form >
+            {% csrf_token %}
+            <div class="formGroupHalf" style="float: left">
+                <div class="formLabel"><h4 class="h4">Tên họ <span class="importantStar">*</span></h4></div>
+                <input type="text" style="margin-bottom:30px" name="name" value="{{ name }}" required
+                    oninvalid="this.setCustomValidity('Xin vui lòng điền tên và họ.')" oninput="setCustomValidity('')"
+                       placeholder="Tên họ"
+                ><br>
+
+                <div class="formLabel"><h4 class="h4">Email <span class="importantStar">*</span></h4></div>
+                <input type="email" name="email" value="{{ email }}" required
+                    oninvalid="this.setCustomValidity('Xin vui lòng điền email.')" oninput="setCustomValidity('')"
+                       placeholder="Email"
+                ><br>
+            </div>
+
+            <div class="formGroupHalf" style="float: right">
+                <div class="formLabel"><h4 class="h4">Điện thoại</h4></div>
+                <input type="text" style="margin-bottom:30px" name="phone" value="{{ phone }}" placeholder="Điện thoại"><br>
+
+                <div class="formLabel"><h4 class="h4">Địa chỉ</h4></div>
+                <input type="text" name="address" value="{{ address }}" placeholder="Địa chỉ"><br>
+            </div>
+
+            <div class="formGroupFull" style="margin: 30px 0px 30px 0px">
+                <div class="formLabel"><h4 class="h4">Tin nhắn</h4></div>
+                <textarea type="text" name="message" value="{{ message }}" placeholder="Tin nhắn"></textarea><br>
+            </div>
+            <div style="position: relative;width: 100%;float: left;">
+                <button class="submitBtn" type="submit" onclick="contact_MessageSubmit()">GỬI TIN NHẮN</button>
+            </div>
+
+        </form>
+
+        </div>
+
+        <div id="contactDetails">
+            <h3 class="h3">THÔNG TIN LIÊN LẠC</h3>
+
+            <div>
+                <div><h3 class="h3">Địa chỉ</h3></div>
+                <div><h3 class="h3">25 - 141. Nguyễn Huệ - TX. Gò Công - Tiềng Giang</h3></div>
+            </div>
+
+            <div>
+                <div><h3 class="h3">Hotline</h3></div>
+                <div><h3 class="h3">(0733) 841 748 / (0913) 024 840</h3></div>
+            </div>
+
+            <div>
+                <div><h3 class="h3">Email</h3></div>
+                <div><h3 class="h3">ttntanhthu@gmail.com</h3></div>
+            </div>
+
+            <div>
+                <div><h3 class="h3">Mạng xã hội</h3></div>
+                <div id="socialMediaSection" class="h3">
+                    <a href="https://www.facebook.com/robertle11" class="fa fa-facebook" ></a>
+                    <a href="https://www.instagram.com/robertle11/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/robertle1991/" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mapLocation">
+        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1166.8423603678607!2d106.67852025149308!3d10.35992866154942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1dc26cdc27ec14fe!2zQ-G7rWEgSMOgbmcgVHJhbmcgVHLDrSBO4buZaSBUaOG6pXQgQW5oIFRoxrA!5e0!3m2!1sen!2sus!4v1527503141203"
+                        width="100%" height="100%" frameborder="0"  style="border:0; " allowfullscreen>
+
+        </iframe>
+    </div>
 </div>
 
+<link rel="stylesheet" href="{% static 'MainWebApp/css/pages/contact.css' %}">
 <script language="JavaScript" type="text/javascript" src="{% static 'MainWebApp/functions/pages/contact.js' %}"></script>
 {% endblock %}
 

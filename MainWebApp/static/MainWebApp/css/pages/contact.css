@@ -1,0 +1,140 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------COMMON USE SECTIONS--------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 20px) {
+
+    #contactLocation{
+        margin: 30px 0px 30px 0px;
+    }
+
+    #contactLocation{
+        display:table;
+    }
+
+    #mapLocation{
+        height:80vh !important;
+    }
+
+    #contactForm{
+        width:60%;
+        float:left;
+        padding-right:30px;
+        border-right-style: solid;
+        border-color: #f5f5f5;
+        border-width: 2px;
+    }
+
+    #contactDetails{
+        width:40%;
+        float:right;
+        padding-left:30px;
+    }
+
+    #socialMediaSection{
+        position: relative;
+        width: 100%;
+    }
+
+    #contactForm > *, #contactDetails > *{
+        margin-bottom:60px;
+    }
+
+    .formGroupHalf{
+        width:45%;
+        position:relative;
+    }
+
+    .formGroupFull{
+        float: left;
+        position:relative;
+    }
+
+    .formGroupFull textarea{
+        height:400px;
+        resize: none;
+    }
+
+    #contactDetails div div:first-child h3{
+        color:#D95456 !important;
+        font-weight: bold;
+    }
+
+    .fa, .fa:hover {
+        width: 20px;
+        text-align: left;
+        text-decoration: none;
+        bottom: 0px;
+        margin-right: 15px;
+        display: unset !important;
+        color: #444;
+    }
+
+    .fa:hover {
+        color: #D95456 !important;
+    }
+}
+
+
+/*This style is for devices with screen width is from 1000px*/
+/*Suitable devices are ipad pro and desktops*/
+@media screen and (min-width: 1000px) {
+
+}
+
+/*This style is for devices with screen width is up to 999px*/
+/*Suitable devices are tablets*/
+@media screen and (max-width: 999px) {
+
+    #contactForm{
+        padding-right:15px;
+    }
+
+    #contactDetails{
+        padding-left:15px;
+    }
+
+
+}
+
+/*This style is for devices with screen width is up to 500px*/
+/*Suitable devices are mobile phone*/
+@media screen and (max-width: 500px) {
+
+    #contactForm, #contactDetails{
+        width:100%;
+        float:left;
+        padding: 0px;
+    }
+
+    #contactForm > *, #contactDetails > *{
+        margin-bottom: 30px;
+    }
+    #contactForm{
+        border-right-style: none;
+    }
+
+    .formGroupHalf {
+        width: 100%;
+        height: 90px;
+        margin: 0px 0px 20px 0px;
+        display: grid;
+    }
+
+    #contactDetails {
+        margin-top:30px;
+    }
+
+    #contactForm, #contactDetails {
+        width: 100%;
+        float: left;
+        padding: 0px;
+    }
+
+    #mapLocation{
+        height:60vh;
+    }
+}
+
